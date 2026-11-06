@@ -1,0 +1,2 @@
+syntax = "proto3"; package inventario; service ProductoService { rpc ObtenerProducto (ProductoRequest) returns (ProductoResponse); } message ProductoRequest { int32 id = 1; } message ProductoResponse { int32 id = 1; string nombre = 2; double precio = 3; int32 stock = 4; } 
+
